@@ -1042,3 +1042,25 @@ footer {
     }
 
 }
+
+/* FINAL LOGO FIX */
+
+nav .logo {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+nav .logo img {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    min-height: 65px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
