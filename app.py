@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request
 import os
-import smtplib
-from email.message import EmailMessage
+import resend
 
 app = Flask(__name__)
+
+resend.api_key = os.environ.get("RESEND_API_KEY")
 
 
 @app.route("/")
@@ -19,48 +20,41 @@ def contact():
     company = request.form.get("company", "")
     message = request.form.get("message", "")
 
-    msg = EmailMessage()
-
-    msg["Subject"] = f"New Collab Hive Inquiry from {name}"
-    msg["From"] = os.environ.get("GMAIL_EMAIL")
-    msg["To"] = "collabhive01@gmail.com"
-    msg["Reply-To"] = email
-
-    msg.set_content(
-        f"""
-NEW COLLAB HIVE INQUIRY
-=======================
-
-Name: {name}
-Email: {email}
-Brand / Company: {company}
-
-Message:
-{message}
-
-=======================
-Sent from Collab Hive website
-"""
-    )
-
     try:
 
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+        params = {
+            "from": "Collab Hive <onboarding@resend.dev>",
+            "to": ["collabhive01@gmail.com"],
+            "subject": f"New Collab Hive Inquiry from {name}",
+            "reply_to": email,
+            "html": f"""
+                <h2>New Collab Hive Inquiry</h2>
 
-            smtp.login(
-                os.environ.get("GMAIL_EMAIL"),
-                os.environ.get("GMAIL_APP_PASSWORD")
-            )
+                <p><strong>Name:</strong> {name}</p>
 
-            smtp.send_message(msg)
+                <p><strong>Email:</strong> {email}</p>
+
+                <p><strong>Brand / Company:</strong> {company}</p>
+
+                <h3>Message</h3>
+
+                <p>{message}</p>
+
+                <hr>
+
+                <p>Sent from Collab Hive website</p>
+            """
+        }
+
+        resend.Emails.send(params)
 
         success = "Thank you! Your inquiry has been sent successfully."
 
     except Exception as e:
 
-        print("EMAIL ERROR:", e)
+        print("RESEND ERROR:", e)
 
-        success = "Something went wrong. Please contact us directly."
+        success = "Something went wrong. Please try again."
 
     return render_template(
         "index.html",
