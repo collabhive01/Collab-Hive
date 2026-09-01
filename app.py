@@ -24,7 +24,7 @@ def contact():
 
         params = {
             "from": "Collab Hive <onboarding@resend.dev>",
-            "to": ["collabhive01@gmail.com"],
+            "to": ["collab.hive01@gmail.com"],
             "subject": f"New Collab Hive Inquiry from {name}",
             "reply_to": email,
             "html": f"""
