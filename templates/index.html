@@ -45,25 +45,27 @@
 
 <!-- ================= NAVBAR ================= -->
 
+<!-- ================= NAVBAR ================= -->
+
 <nav>
 
-<div class="logo">
-    <img src="{{ url_for('static', filename='logo.png') }}" alt="Collab Hive">
-</div>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Collab Hive">
+    </div>
 
-    <div class="nav-links">
+    <div class="nav-links" id="navLinks">
 
         <a href="#home">Home</a>
-
         <a href="#services">Services</a>
-
         <a href="#creators">Creators</a>
-
         <a href="#about">About</a>
-
         <a href="#contact">Contact</a>
 
     </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        ☰
+    </button>
 
 </nav>
 
@@ -657,3 +659,25 @@
     </div>
 
 </footer>
+
+    <script>
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("active");
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
