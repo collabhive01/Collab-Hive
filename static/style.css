@@ -925,3 +925,281 @@ footer {
     }
 
 }
+
+/* ================= MOBILE NAVIGATION ================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid #333;
+    color: white;
+    font-size: 24px;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+/* ================= CREATOR BUTTON ================= */
+
+.creator-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 24px;
+    background: var(--gold);
+    color: #080808;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.creator-button:hover {
+    background: var(--light-gold);
+    transform: translateY(-3px);
+}
+
+
+/* ================= CONTACT INFO ================= */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.contact-info span {
+    display: block;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.contact-info p,
+.contact-info a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-info a:hover {
+    color: var(--gold);
+}
+
+
+/* ================= ABOUT POINTS ================= */
+
+.about-points {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.about-points div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.about-points span {
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.about-points strong {
+    color: white;
+}
+
+
+/* ================= PROCESS CARDS ================= */
+
+.process-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer-top {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-brand p {
+    color: #777;
+    margin-top: 12px;
+}
+
+.footer-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links h4 {
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #777;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #666;
+    font-size: 12px;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp-button {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 9999;
+
+    background: #25D366;
+    color: #ffffff;
+
+    padding: 13px 20px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+
+    transition: 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 80px;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        background: #080808;
+
+        border-bottom: 1px solid #222;
+
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 15px 8%;
+        width: 100%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-links {
+        gap: 50px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .whatsapp-button {
+        right: 15px;
+        bottom: 15px;
+        padding: 12px 17px;
+        font-size: 13px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .contact-info {
+        gap: 18px;
+    }
+
+}
