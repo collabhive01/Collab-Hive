@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://collab-hive.onrender.com/sitemap.xml
