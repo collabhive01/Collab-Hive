@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Collab Hive | Influencer Marketing Agency</title>
+
+    <meta
+        name="description"
+        content="Collab Hive connects brands with creators through influencer marketing, creator management and campaign strategy."
+    >
+
+    <link
+        rel="icon"
+        href="{{ url_for('static', filename='logo.png') }}"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     GLOBAL BACKGROUND
+===================================================== -->
+
+<div class="ambient ambient-left"></div>
+<div class="ambient ambient-right"></div>
+
+<div class="cursor-light" id="cursorLight"></div>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <a href="#home" class="brand">
+
+        <img
+            src="{{ url_for('static', filename='logo.png') }}"
+            alt="Collab Hive logo"
+        >
+
+        <span>
+            COLLAB<span>HIVE</span>
+        </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#creators">Creators</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <a
+        href="#contact"
+        class="nav-button"
+    >
+        Start a campaign
+        <b>↗</b>
+    </a>
+
+
+    <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="Open menu"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#creators">Creators</a>
+    <a href="#contact">Contact</a>
+
+    <a
+        href="#contact"
+        class="mobile-menu-cta"
+    >
+        Start a campaign ↗
+    </a>
+
+</div>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+    <canvas id="heroCanvas"></canvas>
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <div class="hero-eyebrow">
+
+            <span></span>
+
+            INFLUENCE · CREATIVITY · IMPACT
+
+        </div>
+
+
+        <h1>
+
+            We build
+
+            <span>influence</span>
+
+            that
+
+            <em>moves.</em>
+
+        </h1>
+
+
+        <p class="hero-copy">
+
+            Collab Hive connects ambitious brands with the right creators
+            to build campaigns people notice, trust and remember.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#contact"
+                class="button-primary"
+            >
+                Let's collaborate
+                <b>↗</b>
+            </a>
+
+
+            <a
+                href="#creators"
+                class="button-secondary"
+            >
+                Explore creators
+                <b>→</b>
+            </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+                <strong>10+</strong>
+                <span>Creators</span>
+            </div>
+
+            <div class="hero-stat">
+                <strong>9+</strong>
+                <span>Niches</span>
+            </div>
+
+            <div class="hero-stat">
+                <strong>100%</strong>
+                <span>Campaign Focus</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-scroll">
+
+        <span>SCROLL</span>
+
+        <i></i>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MARQUEE
+===================================================== -->
+
+<section class="marquee">
+
+    <div class="marquee-track">
+
+        <span>INFLUENCER MARKETING</span>
+        <b>✦</b>
+
+        <span>CREATOR MANAGEMENT</span>
+        <b>✦</b>
+
+        <span>BRAND COLLABORATIONS</span>
+        <b>✦</b>
+
+        <span>SOCIAL GROWTH</span>
+        <b>✦</b>
+
+        <span>CONTENT STRATEGY</span>
+        <b>✦</b>
+
+        <span>INFLUENCER MARKETING</span>
+        <b>✦</b>
+
+        <span>CREATOR MANAGEMENT</span>
+        <b>✦</b>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     THE HIVE
+===================================================== -->
+
+<section
+    class="section hive-section"
+    id="about"
+>
+
+    <div class="section-heading">
+
+        <span class="section-number">01</span>
+
+        <span>THE HIVE</span>
+
+    </div>
+
+
+    <div class="hive-layout">
+
+
+        <!-- MAIN MESSAGE -->
+
+        <div class="hive-main">
+
+            <div class="small-label">
+
+                <span></span>
+
+                WHY COLLAB HIVE
+
+            </div>
+
+
+            <h2>
+
+                We don't just
+                <span>find creators.</span>
+
+                We build
+                <strong>connections.</strong>
+
+            </h2>
+
+
+            <p>
+
+                The best influencer campaigns don't feel like advertising.
+                They feel like a recommendation from someone people already trust.
+
+            </p>
+
+
+            <a
+                href="#contact"
+                class="gold-link"
+            >
+
+                Build your next campaign with us
+
+                <b>↗</b>
+
+            </a>
+
+        </div>
+
+
+
+        <!-- HIVE POINTS -->
+
+        <div class="hive-points">
+
+
+            <div class="hive-point">
+
+                <div class="hive-number">01</div>
+
+                <div>
+
+                    <h3>Right Creators</h3>
+
+                    <p>
+                        We focus on creator-brand fit instead of
+                        blindly chasing follower numbers.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="hive-point">
+
+                <div class="hive-number">02</div>
+
+                <div>
+
+                    <h3>Real Strategy</h3>
+
+                    <p>
+                        Every campaign starts with a clear objective,
+                        audience and creative direction.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="hive-point">
+
+                <div class="hive-number">03</div>
+
+                <div>
+
+                    <h3>Better Content</h3>
+
+                    <p>
+                        We give creators room to make content that
+                        feels natural, engaging and authentic.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="hive-point">
+
+                <div class="hive-number">04</div>
+
+                <div>
+
+                    <h3>Campaign Focus</h3>
+
+                    <p>
+                        From outreach to execution, we stay focused
+                        on what the campaign actually needs.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hive-bottom">
+
+        <span>BRANDS</span>
+        <b>×</b>
+
+        <span>CREATORS</span>
+        <b>×</b>
+
+        <span>COMMUNITIES</span>
+        <b>×</b>
+
+        <span>GROWTH</span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHAT WE DO
+===================================================== -->
+
+<section
+    class="section services-section"
+    id="services"
+>
+
+    <div class="section-heading">
+
+        <span class="section-number">02</span>
+
+        <span>WHAT WE DO</span>
+
+    </div>
+
+
+    <div class="section-title-row">
+
+        <h2>
+
+            Strategy first.
+
+            <span>Content second.</span>
+
+        </h2>
+
+
+        <p>
+
+            We bring strategy, creators and content together
+            to build campaigns that people actually remember.
+
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+
+        <!-- SERVICE 1 -->
+
+        <article class="service-card">
+
+            <img
+                src="{{ url_for('static', filename='images/services/influencer-marketing.jpg') }}"
+                alt="Influencer marketing"
+                loading="lazy"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="card-number">
+                01
+            </div>
+
+            <div class="card-arrow">
+                ↗
+            </div>
+
+
+            <div class="service-info">
+
+                <div class="service-icon">
+                    ◎
+                </div>
+
+                <h3>
+                    Influencer Marketing
+                </h3>
+
+                <p>
+                    Connect your brand with creators who actually fit
+                    your audience and campaign goals.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- SERVICE 2 -->
+
+        <article class="service-card">
+
+            <img
+                src="{{ url_for('static', filename='images/services/creator-management.jpg') }}"
+                alt="Creator management"
+                loading="lazy"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="card-number">
+                02
+            </div>
+
+            <div class="card-arrow">
+                ↗
+            </div>
+
+
+            <div class="service-info">
+
+                <div class="service-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Creator Management
+                </h3>
+
+                <p>
+                    Helping creators build their personal brand,
+                    partnerships and long-term growth.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- SERVICE 3 -->
+
+        <article class="service-card">
+
+            <img
+                src="{{ url_for('static', filename='images/services/campaign-strategy.jpg') }}"
+                alt="Campaign strategy"
+                loading="lazy"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="card-number">
+                03
+            </div>
+
+            <div class="card-arrow">
+                ↗
+            </div>
+
+
+            <div class="service-info">
+
+                <div class="service-icon">
+                    ⌁
+                </div>
+
+                <h3>
+                    Campaign Strategy
+                </h3>
+
+                <p>
+                    From concept to execution, we build a clear
+                    strategy around the desired outcome.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- SERVICE 4 -->
+
+        <article class="service-card">
+
+            <img
+                src="{{ url_for('static', filename='images/services/content-social.jpg') }}"
+                alt="Content and social"
+                loading="lazy"
+            >
+
+            <div class="card-overlay"></div>
+
+            <div class="card-number">
+                04
+            </div>
+
+            <div class="card-arrow">
+                ↗
+            </div>
+
+
+            <div class="service-info">
+
+                <div class="service-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Content & Social
+                </h3>
+
+                <p>
+                    Scroll-stopping content that feels natural,
+                    engaging and authentic to the audience.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CREATOR NETWORK
+===================================================== -->
+
+<section
+    class="section creators-section"
+    id="creators"
+>
+
+    <div class="section-heading">
+
+        <span class="section-number">03</span>
+
+        <span>CREATOR NETWORK</span>
+
+    </div>
+
+
+    <div class="section-title-row">
+
+        <h2>
+
+            Different voices.
+
+            <span>One hive.</span>
+
+        </h2>
+
+
+        <p>
+
+            Creators across categories that matter —
+            ready to turn attention into action.
+
+        </p>
+
+    </div>
+
+
+    <div class="creator-grid">
+
+
+        <!-- FASHION -->
+
+        <article class="creator-card big-card">
+
+            <img
+                src="{{ url_for('static', filename='images/niches/fashion.jpg') }}"
+                alt="Fashion creator"
+                loading="lazy"
+            >
+
+            <div class="creator-overlay"></div>
+
+            <div class="creator-info">
+
+                <span>01</span>
+
+                <h3>Fashion</h3>
+
+                <small>
+                    Style · Trends · Outfits
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- BEAUTY -->
+
+        <article class="creator-card">
+
+            <img
+                src="{{ url_for('static', filename='images/niches/beauty.jpg') }}"
+                alt="Beauty creator"
+                loading="lazy"
+            >
+
+            <div class="creator-overlay"></div>
+
+            <div class="creator-info">
+
+                <span>02</span>
+
+                <h3>Beauty</h3>
+
+                <small>
+                    Beauty · Skincare · Makeup
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- FITNESS -->
+
+        <article class="creator-card">
+
+            <img
+                src="{{ url_for('static', filename='images/niches/fitness.jpg') }}"
+                alt="Fitness creator"
+                loading="lazy"
+            >
+
+            <div class="creator-overlay"></div>
+
+            <div class="creator-info">
+
+                <span>03</span>
+
+                <h3>Fitness</h3>
+
+                <small>
+                    Training · Health · Wellness
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- TECH -->
+
+        <article class="creator-card">
+
+            <img
+                src="{{ url_for('static', filename='images/niches/tech.jpg') }}"
+                alt="Technology creator"
+                loading="lazy"
+            >
+
+            <div class="creator-overlay"></div>
+
+            <div class="creator-info">
+
+                <span>04</span>
+
+                <h3>Tech</h3>
+
+                <small>
+                    AI · Gadgets · Reviews
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- LIFESTYLE -->
+
+        <article class="creator-card big-card">
+
+            <img
+                src="{{ url_for('static', filename='images/niches/lifestyle.jpg') }}"
+                alt="Lifestyle creator"
+                loading="lazy"
+            >
+
+            <div class="creator-overlay"></div>
+
+            <div class="creator-info">
+
+                <span>05</span>
+
+                <h3>Lifestyle</h3>
+
+                <small>
+                    Travel · Daily · Culture
+                </small>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- FINANCE -->
+
+        <article class="creator-card">
+
+            <img
+                src="{{ url_for('static', filename='images/niches/finance.jpg') }}"
+                alt="Finance creator"
+                loading="lazy"
+            >
+
+            <div class="creator-overlay"></div>
+
+            <div class="creator-info">
+
+                <span>06</span>
+
+                <h3>Finance</h3>
+
+                <small>
+                    Money · Business · Growth
+                </small>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     STATEMENT
+===================================================== -->
+
+<section class="statement-section">
+
+    <div class="statement-glow"></div>
+
+    <p>
+        BUILT FOR BRANDS THAT
+    </p>
+
+    <h2>
+
+        Want to be
+
+        <span>remembered.</span>
+
+    </h2>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section class="section process-section">
+
+    <div class="section-heading">
+
+        <span class="section-number">04</span>
+
+        <span>HOW IT WORKS</span>
+
+    </div>
+
+
+    <div class="section-title-row">
+
+        <h2>
+
+            Simple process.
+
+            <span>Strong execution.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="process-list">
+
+
+        <div class="process-item">
+
+            <span>01</span>
+
+            <div>
+
+                <h3>Discover</h3>
+
+                <p>
+                    Understand the brand, audience and campaign objective.
+                </p>
+
+            </div>
+
+            <b>↗</b>
+
+        </div>
+
+
+        <div class="process-item">
+
+            <span>02</span>
+
+            <div>
+
+                <h3>Match</h3>
+
+                <p>
+                    Find creators who genuinely fit the campaign.
+                </p>
+
+            </div>
+
+            <b>↗</b>
+
+        </div>
+
+
+        <div class="process-item">
+
+            <span>03</span>
+
+            <div>
+
+                <h3>Create</h3>
+
+                <p>
+                    Turn the strategy into content people want to watch.
+                </p>
+
+            </div>
+
+            <b>↗</b>
+
+        </div>
+
+
+        <div class="process-item">
+
+            <span>04</span>
+
+            <div>
+
+                <h3>Deliver</h3>
+
+                <p>
+                    Coordinate execution and focus on campaign outcomes.
+                </p>
+
+            </div>
+
+            <b>↗</b>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT / START A CAMPAIGN
+===================================================== -->
+
+<section
+    class="contact-section"
+    id="contact"
+>
+
+    <div class="contact-glow"></div>
+
+    <div class="contact-inner">
+
+        <div class="contact-heading">
+
+            <span class="contact-label">
+                05 · START A CAMPAIGN
+            </span>
+
+            <h2>
+                Let's create
+                <span>something loud.</span>
+            </h2>
+
+            <p>
+                Tell us about your brand, campaign and goals.
+                We'll get back to you with the right creator strategy.
+            </p>
+
+        </div>
+
+
+        <!-- FLASH MESSAGE -->
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+
+            {% if messages %}
+
+                {% for category, message in messages %}
+
+                    <div class="form-message {{ category }}">
+                        {{ message }}
+                    </div>
+
+                {% endfor %}
+
+            {% endif %}
+
+        {% endwith %}
+
+
+        <!-- FORM -->
+
+        <form
+            action="{{ url_for('enquire') }}"
+            method="POST"
+            class="campaign-form"
+        >
+
+            <div class="form-grid">
+
+
+                <div class="form-group">
+
+                    <label for="name">
+                        YOUR NAME *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="brand">
+                        BRAND NAME *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="brand"
+                        name="brand"
+                        placeholder="Your brand"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        EMAIL *
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@brand.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        PHONE
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+91 XXXXX XXXXX"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="campaign">
+                        CAMPAIGN TYPE
+                    </label>
+
+                    <select
+                        id="campaign"
+                        name="campaign"
+                    >
+
+                        <option value="">
+                            Select campaign type
+                        </option>
+
+                        <option value="Influencer Marketing">
+                            Influencer Marketing
+                        </option>
+
+                        <option value="Creator Management">
+                            Creator Management
+                        </option>
+
+                        <option value="Product Launch">
+                            Product Launch
+                        </option>
+
+                        <option value="Content Creation">
+                            Content Creation
+                        </option>
+
+                        <option value="Social Media Campaign">
+                            Social Media Campaign
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="budget">
+                        CAMPAIGN BUDGET
+                    </label>
+
+                    <select
+                        id="budget"
+                        name="budget"
+                    >
+
+                        <option value="">
+                            Select budget
+                        </option>
+
+                        <option value="Under ₹25K">
+                            Under ₹25K
+                        </option>
+
+                        <option value="₹25K - ₹50K">
+                            ₹25K - ₹50K
+                        </option>
+
+                        <option value="₹50K - ₹1L">
+                            ₹50K - ₹1L
+                        </option>
+
+                        <option value="₹1L+">
+                            ₹1L+
+                        </option>
+
+                        <option value="Let's discuss">
+                            Let's discuss
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="form-group full">
+
+                <label for="message">
+                    TELL US ABOUT YOUR CAMPAIGN *
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us about your product, target audience, creators needed, timeline etc."
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-submit-row">
+
+                <p>
+                    We usually respond within 1 business day.
+                </p>
+
+                <button
+                    type="submit"
+                    class="submit-button"
+                >
+                    Send enquiry
+                    <span>↗</span>
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-main">
+
+
+        <div class="footer-brand">
+
+            <a
+                href="#home"
+                class="brand"
+            >
+
+                <img
+                    src="{{ url_for('static', filename='logo.png') }}"
+                    alt="Collab Hive"
+                >
+
+                <span>
+                    COLLAB<span>HIVE</span>
+                </span>
+
+            </a>
+
+
+            <p>
+
+                Influencer marketing built around relevance,
+                creativity and growth.
+
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <span>EXPLORE</span>
+
+            <a href="#about">About</a>
+
+            <a href="#services">Services</a>
+
+            <a href="#creators">Creators</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <span>CONNECT</span>
+
+            <a href="#contact">
+                Start a campaign
+            </a>
+
+            <a href="mailto:collab.hive01@gmail.com">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Collab Hive
+        </span>
+
+        <span>
+            INFLUENCE × CREATIVITY × IMPACT
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     THREE.JS
+===================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+<script>
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuButton =
+    document.getElementById("menuButton");
+
+const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+menuButton.addEventListener(
+    "click",
+    () => {
+
+        menuButton.classList.toggle("active");
+
+        mobileMenu.classList.toggle("active");
+
+    }
+);
+
+
+document
+    .querySelectorAll(".mobile-menu a")
+    .forEach(link => {
+
+        link.addEventListener(
+            "click",
+            () => {
+
+                menuButton.classList.remove("active");
+
+                mobileMenu.classList.remove("active");
+
+            }
+        );
+
+    });
+
+
+
+/* =====================================================
+   CURSOR LIGHT
+===================================================== */
+
+const cursorLight =
+    document.getElementById("cursorLight");
+
+
+document.addEventListener(
+    "mousemove",
+    event => {
+
+        cursorLight.style.left =
+            event.clientX + "px";
+
+        cursorLight.style.top =
+            event.clientY + "px";
+
+    }
+);
+
+
+
+/* =====================================================
+   THREE.JS HERO
+===================================================== */
+
+const canvas =
+    document.getElementById("heroCanvas");
+
+
+const scene =
+    new THREE.Scene();
+
+
+const camera =
+    new THREE.PerspectiveCamera(
+        35,
+        window.innerWidth /
+        window.innerHeight,
+        0.1,
+        100
+    );
+
+
+camera.position.z = 8;
+
+
+const renderer =
+    new THREE.WebGLRenderer({
+
+        canvas: canvas,
+
+        alpha: true,
+
+        antialias: true
+
+    });
+
+
+renderer.setPixelRatio(
+    Math.min(
+        window.devicePixelRatio,
+        1.5
+    )
+);
+
+
+renderer.setSize(
+    window.innerWidth,
+    window.innerHeight
+);
+
+
+
+/* LIGHT */
+
+scene.add(
+    new THREE.AmbientLight(
+        0xffffff,
+        1.2
+    )
+);
+
+
+const mainLight =
+    new THREE.PointLight(
+        0xffc400,
+        2,
+        20
+    );
+
+
+mainLight.position.set(
+    3,
+    2,
+    5
+);
+
+
+scene.add(mainLight);
+
+
+
+/* HIVE GROUP */
+
+const hive =
+    new THREE.Group();
+
+
+scene.add(hive);
+
+
+function updateHivePosition() {
+
+    if (window.innerWidth < 650) {
+
+        hive.position.x = 1.9;
+        hive.position.y = 0.6;
+
+    } else {
+
+        hive.position.x = 2.35;
+        hive.position.y = 0.1;
+
+    }
+
+}
+
+
+updateHivePosition();
+
+
+
+/* OUTER */
+
+const outerGeometry =
+    new THREE.IcosahedronGeometry(
+        2.2,
+        2
+    );
+
+
+const outerMaterial =
+    new THREE.MeshBasicMaterial({
+
+        color: 0xffc400,
+
+        wireframe: true,
+
+        transparent: true,
+
+        opacity: 0.18
+
+    });
+
+
+const outer =
+    new THREE.Mesh(
+        outerGeometry,
+        outerMaterial
+    );
+
+
+hive.add(outer);
+
+
+
+/* CORE */
+
+const coreGeometry =
+    new THREE.IcosahedronGeometry(
+        1.45,
+        2
+    );
+
+
+const coreMaterial =
+    new THREE.MeshPhysicalMaterial({
+
+        color: 0xffb900,
+
+        metalness: 0.25,
+
+        roughness: 0.38,
+
+        transparent: true,
+
+        opacity: 0.16
+
+    });
+
+
+const core =
+    new THREE.Mesh(
+        coreGeometry,
+        coreMaterial
+    );
+
+
+hive.add(core);
+
+
+
+/* RING */
+
+const ringGeometry =
+    new THREE.TorusGeometry(
+        2.55,
+        0.012,
+        10,
+        110
+    );
+
+
+const ringMaterial =
+    new THREE.MeshBasicMaterial({
+
+        color: 0xffc400,
+
+        transparent: true,
+
+        opacity: 0.25
+
+    });
+
+
+const ring =
+    new THREE.Mesh(
+        ringGeometry,
+        ringMaterial
+    );
+
+
+ring.rotation.x = 1.1;
+ring.rotation.z = 0.35;
+
+
+hive.add(ring);
+
+
+const ring2 =
+    ring.clone();
+
+
+ring2.scale.set(
+    0.8,
+    0.8,
+    0.8
+);
+
+
+ring2.rotation.y = 1;
+
+
+hive.add(ring2);
+
+
+
+/* HEXAGONS */
+
+const hexGroup =
+    new THREE.Group();
+
+
+hive.add(hexGroup);
+
+
+for (
+    let i = 0;
+    i < 12;
+    i++
+) {
+
+    const hexGeometry =
+        new THREE.CylinderGeometry(
+            0.13,
+            0.13,
+            0.04,
+            6
+        );
+
+
+    const hexMaterial =
+        new THREE.MeshBasicMaterial({
+
+            color: 0xffc400,
+
+            transparent: true,
+
+            opacity: 0.5
+
+        });
+
+
+    const hex =
+        new THREE.Mesh(
+            hexGeometry,
+            hexMaterial
+        );
+
+
+    const angle =
+        (
+            i / 12
+        ) *
+        Math.PI *
+        2;
+
+
+    const radius = 2.35;
+
+
+    hex.position.x =
+        Math.cos(angle) *
+        radius;
+
+
+    hex.position.y =
+        Math.sin(angle) *
+        radius;
+
+
+    hex.position.z =
+        (
+            Math.random() -
+            0.5
+        ) *
+        1.2;
+
+
+    hex.rotation.z =
+        angle;
+
+
+    hexGroup.add(hex);
+
+}
+
+
+
+/* PARTICLES */
+
+const particleCount =
+    window.innerWidth < 650
+        ? 120
+        : 280;
+
+
+const particlePositions =
+    new Float32Array(
+        particleCount * 3
+    );
+
+
+for (
+    let i = 0;
+    i < particleCount;
+    i++
+) {
+
+    const radius =
+        3.6 +
+        Math.random() * 3.5;
+
+
+    const theta =
+        Math.random() *
+        Math.PI *
+        2;
+
+
+    const phi =
+        Math.acos(
+            Math.random() * 2 - 1
+        );
+
+
+    particlePositions[i * 3] =
+        radius *
+        Math.sin(phi) *
+        Math.cos(theta);
+
+
+    particlePositions[
+        i * 3 + 1
+    ] =
+        radius *
+        Math.sin(phi) *
+        Math.sin(theta);
+
+
+    particlePositions[
+        i * 3 + 2
+    ] =
+        radius *
+        Math.cos(phi);
+
+}
+
+
+const particleGeometry =
+    new THREE.BufferGeometry();
+
+
+particleGeometry.setAttribute(
+    "position",
+    new THREE.BufferAttribute(
+        particlePositions,
+        3
+    )
+);
+
+
+const particleMaterial =
+    new THREE.PointsMaterial({
+
+        color: 0xffc400,
+
+        size:
+            window.innerWidth < 650
+                ? 0.014
+                : 0.018,
+
+        transparent: true,
+
+        opacity: 0.28
+
+    });
+
+
+const particles =
+    new THREE.Points(
+        particleGeometry,
+        particleMaterial
+    );
+
+
+scene.add(particles);
+
+
+
+/* MOUSE */
+
+let mouseX = 0;
+let mouseY = 0;
+
+
+document.addEventListener(
+    "mousemove",
+    event => {
+
+        mouseX =
+            (
+                event.clientX /
+                window.innerWidth
+            ) * 2 - 1;
+
+
+        mouseY =
+            (
+                event.clientY /
+                window.innerHeight
+            ) * 2 - 1;
+
+    }
+);
+
+
+
+/* ANIMATE */
+
+const clock =
+    new THREE.Clock();
+
+
+function animate() {
+
+    requestAnimationFrame(
+        animate
+    );
+
+
+    const time =
+        clock.getElapsedTime();
+
+
+    outer.rotation.y =
+        time * 0.08;
+
+
+    outer.rotation.x =
+        time * 0.025;
+
+
+    core.rotation.y =
+        -time * 0.045;
+
+
+    ring.rotation.z =
+        0.35 +
+        time * 0.035;
+
+
+    ring2.rotation.y =
+        1 +
+        time * 0.04;
+
+
+    hexGroup.rotation.z =
+        time * 0.025;
+
+
+    particles.rotation.y =
+        time * 0.006;
+
+
+    hive.position.y +=
+        (
+            (
+                (
+                    window.innerWidth < 650
+                    ? 0.6
+                    : 0.1
+                ) +
+                Math.sin(time * 0.7) * 0.06
+            )
+            -
+            hive.position.y
+        ) * 0.02;
+
+
+    hive.rotation.y +=
+        (
+            mouseX * 0.10 -
+            hive.rotation.y
+        ) * 0.015;
+
+
+    hive.rotation.x +=
+        (
+            mouseY * -0.06 -
+            hive.rotation.x
+        ) * 0.015;
+
+
+    renderer.render(
+        scene,
+        camera
+    );
+
+}
+
+
+animate();
+
+
+
+/* RESIZE */
+
+window.addEventListener(
+    "resize",
+    () => {
+
+        camera.aspect =
+            window.innerWidth /
+            window.innerHeight;
+
+
+        camera.updateProjectionMatrix();
+
+
+        renderer.setSize(
+            window.innerWidth,
+            window.innerHeight
+        );
+
+
+        updateHivePosition();
+
+    }
+);
+
+
+
+/* =====================================================
+   CARD TILT
+===================================================== */
+
+document
+    .querySelectorAll(".service-card")
+    .forEach(card => {
+
+        card.addEventListener(
+            "mousemove",
+            event => {
+
+                if (
+                    window.innerWidth < 900
+                ) {
+                    return;
+                }
+
+
+                const rect =
+                    card.getBoundingClientRect();
+
+
+                const x =
+                    event.clientX -
+                    rect.left;
+
+
+                const y =
+                    event.clientY -
+                    rect.top;
+
+
+                const rotateX =
+                    (
+                        y -
+                        rect.height / 2
+                    ) / 30;
+
+
+                const rotateY =
+                    -(
+                        x -
+                        rect.width / 2
+                    ) / 30;
+
+
+                card.style.transform =
+                    `
+                    perspective(1000px)
+                    rotateX(${rotateX}deg)
+                    rotateY(${rotateY}deg)
+                    translateY(-5px)
+                    `;
+
+            }
+        );
+
+
+        card.addEventListener(
+            "mouseleave",
+            () => {
+
+                card.style.transform =
+                    "";
+
+            }
+        );
+
+    });
+
+
+
+/* =====================================================
+   SMOOTH SCROLL
+===================================================== */
+
+document
+    .querySelectorAll(
+        'a[href^="#"]'
+    )
+    .forEach(link => {
+
+        link.addEventListener(
+            "click",
+            event => {
+
+                const target =
+                    document.querySelector(
+                        link.getAttribute(
+                            "href"
+                        )
+                    );
+
+
+                if (target) {
+
+                    event.preventDefault();
+
+                    target.scrollIntoView({
+                        behavior: "smooth"
+                    });
+
+                }
+
+            }
+        );
+
+    });
+
+</script>
+
+</body>
+</html>
