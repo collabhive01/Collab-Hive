@@ -19,7 +19,7 @@
 
     <link
         rel="icon"
-        href="{{ url_for('static', filename='logo.png') }}"
+        href="static/logo.png"
     >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +37,7 @@
 
     <link
         rel="stylesheet"
-        href="{{ url_for('static', filename='style.css') }}"
+        href="static/style.css"
     >
 
 </head>
@@ -64,7 +64,7 @@
     <a href="#home" class="brand">
 
         <img
-            src="{{ url_for('static', filename='logo.png') }}"
+            src="static/logo.png"
             alt="Collab Hive logo"
         >
 
@@ -482,7 +482,7 @@
         <article class="service-card">
 
             <img
-                src="{{ url_for('static', filename='images/services/influencer-marketing.jpg') }}"
+                src="static/images/services/influencer-marketing.jpg"
                 alt="Influencer marketing"
                 loading="lazy"
             >
@@ -524,7 +524,7 @@
         <article class="service-card">
 
             <img
-                src="{{ url_for('static', filename='images/services/creator-management.jpg') }}"
+                src="static/images/services/creator-management.jpg"
                 alt="Creator management"
                 loading="lazy"
             >
@@ -566,7 +566,7 @@
         <article class="service-card">
 
             <img
-                src="{{ url_for('static', filename='images/services/campaign-strategy.jpg') }}"
+                src="static/images/services/campaign-strategy.jpg"
                 alt="Campaign strategy"
                 loading="lazy"
             >
@@ -608,7 +608,7 @@
         <article class="service-card">
 
             <img
-                src="{{ url_for('static', filename='images/services/content-social.jpg') }}"
+                src="static/images/services/content-social.jpg"
                 alt="Content and social"
                 loading="lazy"
             >
@@ -696,14 +696,14 @@
         <article class="creator-card big-card">
 
             <img
-                src="{{ url_for('static', filename='images/niches/fashion.jpg') }}"
+                src="static/images/niches/fashion.jpg"
                 alt="Fashion creator"
                 loading="lazy"
             >
 
             <div class="creator-overlay"></div>
 
-            <div class="creator-info">
+            <div class="creator-content">
 
                 <span>01</span>
 
@@ -724,14 +724,14 @@
         <article class="creator-card">
 
             <img
-                src="{{ url_for('static', filename='images/niches/beauty.jpg') }}"
+                src="static/images/niches/beauty.jpg"
                 alt="Beauty creator"
                 loading="lazy"
             >
 
             <div class="creator-overlay"></div>
 
-            <div class="creator-info">
+            <div class="creator-content">
 
                 <span>02</span>
 
@@ -752,14 +752,14 @@
         <article class="creator-card">
 
             <img
-                src="{{ url_for('static', filename='images/niches/fitness.jpg') }}"
+                src="static/images/niches/fitness.jpg"
                 alt="Fitness creator"
                 loading="lazy"
             >
 
             <div class="creator-overlay"></div>
 
-            <div class="creator-info">
+            <div class="creator-content">
 
                 <span>03</span>
 
@@ -780,14 +780,14 @@
         <article class="creator-card">
 
             <img
-                src="{{ url_for('static', filename='images/niches/tech.jpg') }}"
+                src="static/images/niches/tech.jpg"
                 alt="Technology creator"
                 loading="lazy"
             >
 
             <div class="creator-overlay"></div>
 
-            <div class="creator-info">
+            <div class="creator-content">
 
                 <span>04</span>
 
@@ -808,14 +808,14 @@
         <article class="creator-card big-card">
 
             <img
-                src="{{ url_for('static', filename='images/niches/lifestyle.jpg') }}"
+                src="static/images/niches/lifestyle.jpg"
                 alt="Lifestyle creator"
                 loading="lazy"
             >
 
             <div class="creator-overlay"></div>
 
-            <div class="creator-info">
+            <div class="creator-content">
 
                 <span>05</span>
 
@@ -836,14 +836,14 @@
         <article class="creator-card">
 
             <img
-                src="{{ url_for('static', filename='images/niches/finance.jpg') }}"
+                src="static/images/niches/finance.jpg"
                 alt="Finance creator"
                 loading="lazy"
             >
 
             <div class="creator-overlay"></div>
 
-            <div class="creator-info">
+            <div class="creator-content">
 
                 <span>06</span>
 
@@ -1031,31 +1031,13 @@
         </div>
 
 
-        <!-- FLASH MESSAGE -->
-
-        {% with messages = get_flashed_messages(with_categories=true) %}
-
-            {% if messages %}
-
-                {% for category, message in messages %}
-
-                    <div class="form-message {{ category }}">
-                        {{ message }}
-                    </div>
-
-                {% endfor %}
-
-            {% endif %}
-
-        {% endwith %}
-
-
         <!-- FORM -->
 
         <form
-            action="{{ url_for('enquire') }}"
+            action="#"
             method="POST"
             class="campaign-form"
+            onsubmit="return false;"
         >
 
             <div class="form-grid">
@@ -1273,7 +1255,7 @@
             >
 
                 <img
-                    src="{{ url_for('static', filename='logo.png') }}"
+                    src="static/logo.png"
                     alt="Collab Hive"
                 >
 
