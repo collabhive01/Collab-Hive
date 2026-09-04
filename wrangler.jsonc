@@ -1,15 +1,8 @@
 {
   "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
-  "name": "collab-hive",
+  "name": "collabhive-web",
   "compatibility_date": "2026-09-04",
-
   "assets": {
-    "directory": ".",
-    "exclude": [
-      "wrangler.jsonc",
-      "netlify.toml",
-      ".git/**",
-      ".gitignore"
-    ]
+    "directory": "."
   }
 }
